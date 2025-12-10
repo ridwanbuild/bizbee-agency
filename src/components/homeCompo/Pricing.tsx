@@ -3,7 +3,7 @@ import { useState } from "react";
 import { BiCheck } from "react-icons/bi";
 
 
-// todo check
+
 interface Plan {
   name: string;
   monthly: number;
@@ -17,6 +17,7 @@ const plans: Plan[] = [
     monthly: 12,
     yearly: 10,
     features: ["3 projects", "5GB storage", "Email support"],
+
   },
   {
     name: "Standard",
@@ -38,7 +39,7 @@ const Pricing: React.FC = () => {
   const [yearly, setYearly] = useState(false);
 
   return (
-    <div className="py-20 bg-gradient-to-r from-gray-50 to-white">
+    <div className="py-20 pt-30 bg-gradient-to-r from-gray-50 to-white">
       <div className="container mx-auto px-6">
 
         {/* Heading */}
@@ -58,28 +59,31 @@ const Pricing: React.FC = () => {
             type="button"
             onClick={() => setYearly(!yearly)}
             className={`relative inline-flex h-6 w-11 items-center rounded-full transition-colors ${
-              yearly ? "bg-indigo-600" : "bg-gray-200"
+              yearly ? "bg-orange-600" : "bg-gray-200"
             }`}
           >
             <span
               className={`inline-block h-4 w-4 transform rounded-full bg-white transition-transform ${
                 yearly ? "translate-x-6" : "translate-x-1"
               }`}
+
             />
           </button>
+
 
           <span className={yearly ? "font-semibold" : "text-gray-500"}>Yearly</span>
         </div>
 
         {/* cards */}
-        <div className="grid md:grid-cols-3 gap-8 justify-center">
+        <div className="grid  lg:grid-cols-3 gap-8 justify-center">
+
           {plans.map((plan) => (
             <div
               key={plan.name}
-              className="p-6 bg-white rounded-lg shadow-sm border border-gray-200 w-full flex flex-col justify-between"
+              className="p-8 bg-white  rounded-lg shadow-sm border border-gray-200 w-full flex flex-col justify-between"
             >
-              <div>
-                <h3 className="text-xl font-bold mb-2 text-gray-900">{plan.name}</h3>
+              <div className="">
+                <h3 className="text-xl font-bold mb-2 text-black">{plan.name}</h3>
                 <p className="text-gray-600">{yearly ? "Billed yearly" : "Monthly billing"}</p>
 
                 <div className="mt-3 mb-6 flex items-baseline">
@@ -104,10 +108,11 @@ const Pricing: React.FC = () => {
                     </li>
                   ))}
                 </ul>
+                
               </div>
 
               {/* button stays at bottom */}
-              <button className="w-full cursor-pointer py-2 px-4 bg-black text-white rounded-lg text-sm hover:bg-gray-800 mt-auto">
+              <button className="w-full cursor-pointer py-2 px-4 bg-gray-800 text-white rounded-lg text-sm hover:bg-gray-900 mt-auto">
                 Subscribe Now
               </button>
             </div>

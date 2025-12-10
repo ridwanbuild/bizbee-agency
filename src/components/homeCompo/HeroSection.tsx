@@ -8,7 +8,7 @@ import { FiArrowRight } from "react-icons/fi";
 
 export default function HeroSection() {
   return (
-    <div className="bg-[url('https://raw.githubusercontent.com/prebuiltui/prebuiltui/main/assets/hero/gradientBackground.png')]  text-sm text-gray-500">
+    <div className=" bg-[url('https://raw.githubusercontent.com/prebuiltui/prebuiltui/main/assets/hero/gradientBackground.png')]  text-sm text-gray-500">
 
       {/* HERO SECTION */}
       <div className="h-screen  flex flex-col items-center justify-center px-4 text-center">

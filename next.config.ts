@@ -2,11 +2,34 @@
 const nextConfig = {
   reactStrictMode: true,
   images: {
-    domains: [
-      'tse2.mm.bing.net',
-      't3.ftcdn.net',
-      'www.unitopled.com',
-      'img.freepik.com'
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'tse2.mm.bing.net',
+        pathname: '/**',
+      },
+      {
+        protocol: 'https',
+        hostname: 't3.ftcdn.net',
+        pathname: '/**',
+      },
+      {
+        protocol: 'https',
+        hostname: 'www.unitopled.com',
+        pathname: '/**',
+      },
+      {
+        protocol: 'https',
+        hostname: 'img.freepik.com',
+        pathname: '/**',
+      },
+
+      {
+        protocol: "https",
+        hostname: "images.unsplash.com",
+      },
+
+
     ],
   },
 }

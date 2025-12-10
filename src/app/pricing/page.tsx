@@ -1,7 +1,10 @@
+import Pricing from '@/components/homeCompo/Pricing'
 import React from 'react'
 
 export default function PricingPage() {
   return (
-    <div>PricingPage</div>
+    <div>
+      <Pricing></Pricing>
+    </div>
   )
 }

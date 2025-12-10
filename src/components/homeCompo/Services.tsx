@@ -36,13 +36,7 @@ const services: ServiceItem[] = [
 const Services: React.FC = () => {
   return (
     <section
-      className="
-      py-20
-      bg-gradient-to-b
-      from-[#f8fafc]
-      via-[#f2f7ff]
-      to-[#eef5ff]
-      "
+      className="bg-white h-screen flex items-center justify-center"
     >
       <div className="max-w-6xl mx-auto px-6">
         {/* Title */}
@@ -65,28 +59,28 @@ const Services: React.FC = () => {
                 key={index}
                 className="
                 p-6 rounded-xl 
-  shadow-md
-  bg-gradient-to-br 
-  from-[#efeef0]
-  via-[#e6f3ff]
-  to-[#f4f9ff]
-  backdrop-blur-md 
-  transition-all
-  hover:shadow-lg
+                shadow-md
+                bg-gradient-to-br 
+                from-[#efeef0]
+                via-[#e6f3ff]
+                to-[#f4f9ff]
+                backdrop-blur-md 
+                transition-all
+                hover:shadow-lg
                 "
               >
                 <div className="text-green-600 mb-3">
                   <Icon size={28} />
                 </div>
 
-                <h3 className="font-semibold text-lg mb-3">
-                  {service.title}
-                </h3>
+                <h3 className="font-semibold text-lg mb-3">{service.title}</h3>
 
                 <ul className="space-y-2 text-gray-600 text-sm">
+
                   {service.bullets.map((bullet, i) => (
                     <li key={i}>• {bullet}</li>
                   ))}
+
                 </ul>
               </div>
             );

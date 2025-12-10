@@ -19,11 +19,11 @@ export default function Navbar() {
 
   // ADDED: shared link list
   const navLinks = [
-    { label: "home", href: "#" },
-    { label: "about", href: "#" },
-    { label: "services", href: "#" },
-    { label: "pricing", href: "#" },
-    { label: "contact", href: "#" },
+    { label: "home", href: "/" },
+    { label: "about", href: "about" },
+    { label: "services", href: "services" },
+    { label: "pricing", href: "pricing" },
+    { label: "contact", href: "contact" }
   ];
 
   return (

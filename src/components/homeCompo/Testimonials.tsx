@@ -34,6 +34,19 @@ const cardsData: CardData[] = [
     name: 'Avery Johnson',
     handle: '@averywrites',
   },
+  {
+    image: 'https://www.unitopled.com/wp-content/uploads/2023/05/man-2.webp',
+    name: 'Jordan Lee',
+    handle: '@jordantalks',
+  },
+  {
+    image: 'https://img.freepik.com/free-photo/handsome-smiling-bearded-man-looking-excited_176420-17937.jpg',
+    name: 'Avery Johnson',
+    handle: '@averywrites',
+  },
+
+
+
 ];
 
 const CreateCard: FC<CreateCardProps> = ({ card }) => (
@@ -81,6 +94,7 @@ const Testimonials: FC = () => {
             {[...cardsData, ...cardsData].map((card, index) => (
               <CreateCard key={index} card={card} />
             ))}
+            
           </div>
 
           {/* Right Gradient */}
