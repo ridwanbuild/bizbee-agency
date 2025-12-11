@@ -6,7 +6,7 @@ import { FaStar } from "react-icons/fa";
 export default function UpdateNews() {
   return (
     <div className=" max-w-5xl m-auto my-20 p-8  
-      bg-gradient-to-b from-[#4C0083] to-[#180047] 
+      bg-gradient-to-r from-red-500 to-orange-500 
       rounded-2xl text-white flex items-center justify-between">
 
       {/* LEFT TEXT SECTION */}
@@ -31,18 +31,18 @@ export default function UpdateNews() {
       </div>
 
       {/* RIGHT INPUT SECTION */}
-      <div className="md:w-1/2 flex items-center gap-2 bg-violet-900 mt-6 md:mt-0 
+      <div className="md:w-1/2 flex items-center gap-2 bg-gray-100 text-black! mt-6 md:mt-0 
         pl-4 h-11 text-sm rounded-full overflow-hidden w-full md:w-auto">
 
-        <HiOutlineMail size={20} className="text-slate-300" />
+        <HiOutlineMail size={20} className="text-slate-500" />
 
         <input
           type="email"
           placeholder="Enter your email..."
-          className="flex-1 outline-none bg-transparent text-white placeholder-slate-300"
+          className="flex-1 outline-none bg-transparent "
         />
 
-        <button className="px-6 h-10 mr-1 rounded-full border border-violet-600 bg-violet-800">
+        <button className="px-6 h-10 mr-1 rounded-full hover:text-white transition hover:border-orange-600 hover:bg-orange-600 cursor-pointer border border-gray-400 bg-white-800">
           Subscribe
         </button>
 

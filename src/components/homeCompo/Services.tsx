@@ -3,6 +3,7 @@
 import React from "react";
 import { IconType } from "react-icons";
 import { FiTrendingUp, FiVideo, FiLayers, FiCode } from "react-icons/fi";
+import SectionHeading from "../Re_UseCompo/SectionHeading";
 
 interface ServiceItem {
   title: string;
@@ -35,14 +36,14 @@ const services: ServiceItem[] = [
 
 const Services: React.FC = () => {
   return (
-    <section
-      className="bg-white h-screen flex items-center justify-center"
-    >
+    <section className="bg-white h-screen flex items-center justify-center">
       <div className="max-w-6xl mx-auto px-6">
         {/* Title */}
-        <h2 className="text-center text-3xl font-bold mb-4">
-          Your Vision, Our Expertise.
-        </h2>
+
+        <SectionHeading
+          badgeText="Your Vision"
+          titleText="Our Expertise"
+        ></SectionHeading>
 
         <p className="text-center text-gray-600 max-w-2xl mx-auto mb-16">
           We are a multidisciplinary agency dedicated to driving measurable
@@ -76,11 +77,9 @@ const Services: React.FC = () => {
                 <h3 className="font-semibold text-lg mb-3">{service.title}</h3>
 
                 <ul className="space-y-2 text-gray-600 text-sm">
-
                   {service.bullets.map((bullet, i) => (
                     <li key={i}>• {bullet}</li>
                   ))}
-
                 </ul>
               </div>
             );
