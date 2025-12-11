@@ -15,20 +15,21 @@ export default function DialogButton() {
   return (
     <div className="p-10 flex items-center justify-center">
       {/* Button that opens the dialog */}
-      <Dialog>
+      <Dialog >
 
-        <DialogTrigger className="px-4 py-2 bg-gray-800 cursor-pointer text-white rounded-sm">
+        <DialogTrigger className="px-4  py-2 bg-gray-800 cursor-pointer text-white rounded-sm">
 
           I want Request Form
-
         </DialogTrigger>
 
         {/* The dialog box */}
         <DialogContent>
-          <DialogHeader>
+
+          <DialogHeader className="">
             <DialogTitle>Request Form</DialogTitle>
           </DialogHeader>
 
+{/* contact form */}
           <Want_Request />
 
         </DialogContent>

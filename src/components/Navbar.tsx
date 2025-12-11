@@ -3,6 +3,7 @@
 import React, { useState } from "react";
 import Link from "next/link";
 import { HiOutlineMenu, HiOutlineX } from "react-icons/hi";
+import { usePathname } from "next/navigation"; // ⬅️ Added
 
 interface NavLink {
   label: string;
@@ -19,12 +20,12 @@ const navLinks: NavLink[] = [
 
 export default function Navbar() {
   const [mobileOpen, setMobileOpen] = useState<boolean>(false);
+  const pathname = usePathname(); // ⬅️ Added
 
   return (
     <div className="relative">
-      <header className="flex items-center bg-white lg:bg-white/50 lg:backdrop-blur-md justify-between fixed lg:top-3 left-1/2 -translate-x-1/2 container px-6 py-4  shadow-md lg:rounded-full z-30">
-        
-   
+      <header className="flex items-center bg-white lg:bg-white/50 lg:backdrop-blur-md justify-between fixed lg:top-3 left-1/2 -translate-x-1/2 container px-6 py-4 shadow-md lg:rounded-full z-30">
+
         {/* LOGO */}
         <Link href="/">
           <h2 className="font-bold text-xl">
@@ -38,7 +39,9 @@ export default function Navbar() {
             <Link
               key={item.label}
               href={item.href}
-              className="hover:text-orange-600 text-[16px] capitalize"
+              className={`hover:text-orange-600 text-[16px] capitalize ${
+                pathname === item.href ? "text-orange-600 font-medium" : ""
+              }`}
             >
               {item.label}
             </Link>
@@ -70,12 +73,14 @@ export default function Navbar() {
             </button>
           </div>
 
-          {/* LINKS */}
+          {/* MOBILE LINKS */}
           {navLinks.map((item) => (
             <Link
               key={item.label}
               href={item.href}
-              className="capitalize hover:text-orange-600 py-3"
+              className={`capitalize hover:text-orange-600 py-3 ${
+                pathname === item.href ? "text-orange-600 font-medium" : ""
+              }`}
               onClick={() => setMobileOpen(false)}
             >
               {item.label}
@@ -96,7 +101,7 @@ export default function Navbar() {
         {/* RIGHT BUTTONS */}
         <div className="flex items-center space-x-4">
           <Link
-            className="hidden md:flex bg-orange-500 text-white px-5 py-2 rounded-full text-sm font-medium "
+            className="hidden md:flex bg-orange-500 text-white px-5 py-2 rounded-full text-sm font-medium"
             href="/contact"
           >
             Support Us

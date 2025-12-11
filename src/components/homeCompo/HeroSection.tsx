@@ -8,10 +8,10 @@ import { FiArrowRight } from "react-icons/fi";
 
 export default function HeroSection() {
   return (
-    <div className=" bg-[url('https://raw.githubusercontent.com/prebuiltui/prebuiltui/main/assets/hero/gradientBackground.png')]  text-sm text-gray-500">
+    <div className="lg:pt-30 pt-12 bg-[url('https://raw.githubusercontent.com/prebuiltui/prebuiltui/main/assets/hero/gradientBackground.png')]  text-sm text-gray-500">
 
       {/* HERO SECTION */}
-      <div className="h-screen  flex flex-col items-center justify-center px-4 text-center">
+      <div className=" py-20 flex flex-col items-center justify-center px-4 text-center">
 
         
 
@@ -27,15 +27,15 @@ export default function HeroSection() {
         </p>
 
         {/* Buttons */}
-        <div className="flex flex-col sm:flex-row items-center justify-center gap-4 pt-6">
+        <div className="flex items-center  gap-4 pt-6">
 
           {/* CTA Button */}
-          <button className="px-7 cursor-pointer py-3 rounded-full bg-teal-600 text-white font-medium">
+          <button className="border px-4 hover:bg-transparent hover:text-black cursor-pointer py-2 transition rounded-full bg-gray-800  text-white">
             Get Started Now
           </button>
 
           {/* Learn More Button */}
-          <button className="group border cursor-pointer rounded-full px-7 py-2.5 flex items-center gap-2 font-medium">
+          <button className="border px-4 py-2 rounded-full text-black hover:text-white hover:bg-gray-800 transition cursor-pointer flex items-center ">
             Learn more
             <FiArrowRight
               className="group-hover:translate-x-1 transition text-gray-600"

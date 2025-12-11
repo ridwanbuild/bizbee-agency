@@ -36,19 +36,32 @@ const services: ServiceItem[] = [
 
 const Services: React.FC = () => {
   return (
-    <section className="bg-white h-screen flex items-center justify-center">
+    <section className="bg-white py-16 flex items-center justify-center">
       <div className="max-w-6xl mx-auto px-6">
         {/* Title */}
 
-        <SectionHeading
+       <div className="flex lg:items-center flex-col items-start">
+         <SectionHeading
           badgeText="Your Vision"
           titleText="Our Expertise"
+
+          paraText="We are a multidisciplinary agency dedicated to driving measurable
+          results through creative excellence and strategic execution."
+          
         ></SectionHeading>
 
-        <p className="text-center text-gray-600 max-w-2xl mx-auto mb-16">
-          We are a multidisciplinary agency dedicated to driving measurable
-          results through creative excellence and strategic execution.
-        </p>
+
+
+       </div>
+
+
+        
+    
+
+
+
+
+
 
         {/* Cards */}
         <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-4">

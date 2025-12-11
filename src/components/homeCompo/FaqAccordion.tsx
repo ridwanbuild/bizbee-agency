@@ -65,9 +65,6 @@ const FAQ_DATA: FaqItem[] = [
       "Extra customs/import fees (if any) are the customer’s responsibility.",
     ],
   },
-
- 
- 
 ];
 
 export function FaqAccordion() {
@@ -78,10 +75,7 @@ export function FaqAccordion() {
       rounded-md  min-h-screen 
     "
     >
-
-<div className="text-center py-10">
-   
-</div>
+      <div className="text-center "></div>
 
       <div className="grid lg:grid-cols-2 items-center gap-8 px-4 container m-auto">
         <div className="self-start lg:pt-30">
@@ -95,16 +89,20 @@ export function FaqAccordion() {
         </div>
 
         <div className="flex  flex-col px-4 py-15">
-
           <div className="pb-10 space-y-2 gap-10">
             <div className="flex items-center ">
-                <h2>FAQ’S</h2>
-                <span className="w-5 mx-2 h-0.5 bg-orange-500"></span>
+              <h2>FAQ’S</h2>
+              <span className="w-5 mx-2 h-0.5 bg-orange-500"></span>
             </div>
 
-              <h2 className="lg:text-3xl font-semibold text-gray-800">Top Questions Answered Your Quick Guide</h2>
-              <p>Digiplus is the hub for early adopters and innovation enthusiasts, offering vibrant, imaginative technology before it becomes mainstream sem taciti placerat</p>
-
+            <h2 className="lg:text-3xl font-semibold text-gray-800">
+              Top Questions Answered Your Quick Guide
+            </h2>
+            <p>
+              Digiplus is the hub for early adopters and innovation enthusiasts,
+              offering vibrant, imaginative technology before it becomes
+              mainstream sem taciti placerat
+            </p>
           </div>
 
           <Accordion type="single" collapsible className="  space-y-4">

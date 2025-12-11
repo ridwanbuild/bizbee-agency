@@ -44,7 +44,8 @@ export default function AboutSection() {
     <section className="bg-[url('https://raw.githubusercontent.com/prebuiltui/prebuiltui/main/assets/hero/gridBackground.png')] w-full bg-no-repeat bg-cover bg-center">
       <div className="container m-auto px-4 py-20 pt-40">
         {/* Heading */}
-        <div className="text-center mb-14">
+
+        <div className="lg:text-center mb-14">
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
             About <span className="text-orange-600">Biz-Bee</span>
           </h2>
@@ -54,11 +55,13 @@ export default function AboutSection() {
           </p>
         </div>
 
+
+
         {/* GRID CONTENT: Who We Are + Team Image */}
         <div className="grid md:grid-cols-2 gap-12 items-center mb-20">
           {/* Left Text */}
-          <div className="space-y-8">
-            <h3 className="text-2xl font-semibold text-gray-900">Who We Are</h3>
+          <div className="space-y-4">
+            <h3 className="text-xl font-bold text-gray-900">Who We Are</h3>
             <p className="text-gray-700 leading-relaxed">
               Biz-Bee is a multidisciplinary digital agency that transforms ideas
               into meaningful digital impact. We partner with businesses,
@@ -66,7 +69,8 @@ export default function AboutSection() {
               and high-performance online presence.
             </p>
 
-            <h3 className="text-2xl font-semibold text-gray-900 pt-6">What We Do</h3>
+            <h3 className="text-xl font-bold text-gray-900 pt-6">What We Do</h3>
+
             <ul className="space-y-4 text-gray-700">
               <li className="flex items-start gap-3">
                 <FaLaptopCode className="text-orange-600 mt-1" />
