@@ -72,7 +72,7 @@ export function FaqAccordion() {
     <section
       className="
       bg-gradient-to-b from-[#F5F7FF] via-[#fffbee] to-[#E6EFFF] h-full
-      rounded-md  min-h-screen 
+      rounded-md min-h-screen 
     "
     >
       <div className="text-center "></div>
@@ -91,7 +91,7 @@ export function FaqAccordion() {
         <div className="flex  flex-col px-4 py-15">
           <div className="pb-10 space-y-2 gap-10">
             <div className="flex items-center ">
-              <h2>FAQ’S</h2>
+              <h2 className="font-bold">FAQ’S</h2>
               <span className="w-5 mx-2 h-0.5 bg-orange-500"></span>
             </div>
 

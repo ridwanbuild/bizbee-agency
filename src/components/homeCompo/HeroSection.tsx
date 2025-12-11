@@ -11,7 +11,7 @@ export default function HeroSection() {
     <div className="lg:pt-30 pt-12 bg-[url('https://raw.githubusercontent.com/prebuiltui/prebuiltui/main/assets/hero/gradientBackground.png')]  text-sm text-gray-500">
 
       {/* HERO SECTION */}
-      <div className=" py-20 flex flex-col items-center justify-center px-4 text-center">
+      <div className=" py-25 flex flex-col items-center justify-center px-4 text-center">
 
         
 
@@ -38,7 +38,7 @@ export default function HeroSection() {
           <button className="border px-4 py-2 rounded-full text-black hover:text-white hover:bg-gray-800 transition cursor-pointer flex items-center ">
             Learn more
             <FiArrowRight
-              className="group-hover:translate-x-1 transition text-gray-600"
+              className="group-hover:translate-x-1 transition text-gray-600 hover:text-white"
               size={14}
             />
           </button>

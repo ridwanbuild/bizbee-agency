@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import { FaInstagram, FaTwitter, FaFacebookF, FaYoutube } from "react-icons/fa";
 
 interface LinkSection {
   title: string;
@@ -28,9 +29,17 @@ const linkSections: LinkSection[] = [
   },
 ];
 
+// Icon map
+const iconMap: any = {
+  Instagram: <FaInstagram className="text-lg" />,
+  Twitter: <FaTwitter className="text-lg" />,
+  Facebook: <FaFacebookF className="text-lg" />,
+  YouTube: <FaYoutube className="text-lg" />,
+};
+
 const Footer: React.FC = () => {
   return (
-    <footer className="px-6 md:px-16 lg:px-24 xl:px-32 bg-gradient-to-r from-gray-50 via-white to-gray-100">
+    <footer className="px-6 md:px-16 lg:px-24 xl:px-32 bg-gradient-to-b from-[#F1EAFF] to-[#FFFFFF]">
       <div className="flex flex-col md:flex-row items-start justify-between gap-10 py-10 border-b border-gray-300/40 text-gray-600">
 
         {/* LOGO section */}
@@ -47,7 +56,7 @@ const Footer: React.FC = () => {
           </p>
         </div>
 
-        {/* link sections */}
+        {/* Link sections */}
         <div className="flex flex-wrap justify-between w-full md:w-[45%] gap-5">
           {linkSections.map((section) => (
             <div key={section.title}>
@@ -55,10 +64,15 @@ const Footer: React.FC = () => {
                 {section.title}
               </h3>
 
-              <ul className="text-sm space-y-1">
+              <ul className="text-sm space-y-2">
                 {section.links.map((link) => (
                   <li key={link}>
-                    <Link href="#" className="hover:underline text-gray-600 hover:text-gray-900 transition">
+                    <Link
+                      href="#"
+                      className="flex items-center gap-2 hover:underline text-gray-600 hover:text-gray-900 transition"
+                    >
+                      {/* If Follow Us → show icon */}
+                      {section.title === "Follow Us" && iconMap[link]}
                       {link}
                     </Link>
                   </li>

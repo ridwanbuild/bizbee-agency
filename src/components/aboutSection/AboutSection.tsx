@@ -41,7 +41,7 @@ const cardData = [
 
 export default function AboutSection() {
   return (
-    <section className="bg-[url('https://raw.githubusercontent.com/prebuiltui/prebuiltui/main/assets/hero/gridBackground.png')] w-full bg-no-repeat bg-cover bg-center">
+    <section className="bg-gradient-to-b from-[#F5F7FF] via-[#fffbee] to-[#E6EFFF]">
       <div className="container m-auto px-4 py-20 pt-40">
         {/* Heading */}
 
@@ -103,7 +103,7 @@ export default function AboutSection() {
 
         {/* WHY CHOOSE US: Soft Gradient Cards */}
         <div>
-          <h3 className="text-3xl font-semibold text-gray-900 mb-10 text-center">
+          <h3 className="lg:text-3xl text-xl font-bold text-gray-900 mb-5 lg:text-center">
             Why Clients Choose Us
           </h3>
 

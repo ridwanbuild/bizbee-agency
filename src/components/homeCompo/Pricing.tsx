@@ -85,11 +85,11 @@ const Pricing: React.FC = () => {
         </div>
 
         {/* cards */}
-        <div className="grid border border-black  lg:grid-cols-3 gap-8 justify-center">
+        <div className="grid  border-black  lg:grid-cols-3 gap-8 justify-center">
           {plans.map((plan) => (
             <div
               key={plan.name}
-              className="p-8 bg-white  rounded-lg shadow-sm border border-gray-800 flex flex-col justify-between"
+              className="p-8 bg-white rounded-lg shadow-sm  border-gray-800 flex flex-col justify-between"
             >
               <div className="">
                 <h3 className="text-xl font-bold mb-2 text-black">
