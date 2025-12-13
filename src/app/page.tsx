@@ -8,7 +8,8 @@ import Pricing from "@/components/homeCompo/Pricing";
 import Services from "@/components/homeCompo/Services";
 import Testimonials from "@/components/homeCompo/Testimonials";
 import UpdateNews from "@/components/homeCompo/updateNews";
-import Want_Request from "@/components/homeCompo/Want_Requst";
+import Request_Button from "@/components/RequstPage/Request_Button";
+import Want_Request from "@/components/RequstPage/Requst_Form";
 
 
 
@@ -32,7 +33,7 @@ export default function Home() {
 
    
 
-    <DialogButton></DialogButton>
+        <Request_Button></Request_Button>
 
       <Testimonials></Testimonials>
 

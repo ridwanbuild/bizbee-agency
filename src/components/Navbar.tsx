@@ -4,6 +4,8 @@ import React, { useState } from "react";
 import Link from "next/link";
 import { HiOutlineMenu, HiOutlineX } from "react-icons/hi";
 import { usePathname } from "next/navigation"; // ⬅️ Added
+import DialogButton from "./homeCompo/DialogButton";
+import { FaInstagram, FaLinkedinIn } from "react-icons/fa";
 
 interface NavLink {
   label: string;
@@ -15,6 +17,7 @@ const navLinks: NavLink[] = [
   { label: "about", href: "/about" },
   { label: "services", href: "/services" },
   { label: "pricing", href: "/pricing" },
+  { label: "request form", href: "/request" },
   { label: "contact", href: "/contact" },
 ];
 
@@ -25,11 +28,10 @@ export default function Navbar() {
   return (
     <div className="relative">
       <header className="flex items-center bg-white lg:bg-white/50 lg:backdrop-blur-md justify-between fixed lg:top-3 left-1/2 -translate-x-1/2 container px-6 py-4 shadow-md lg:rounded-full z-30">
-
         {/* LOGO */}
         <Link href="/">
-          <h2 className="font-bold text-xl">
-            Biz-<span className="text-teal-600">Bee</span>
+          <h2 className="font-bold text-2xl">
+            Biz-<span className="text-orange-600">Bee</span>
           </h2>
         </Link>
 
@@ -87,7 +89,7 @@ export default function Navbar() {
             </Link>
           ))}
 
-          <div className="pt-4 flex items-center justify-center">
+          {/* <div className="pt-4 flex items-center justify-center">
             <Link
               className="border w-full border-gray-300 text-center px-5 py-2 rounded-md text-sm font-medium"
               href="/contact"
@@ -95,16 +97,33 @@ export default function Navbar() {
             >
               Support Us
             </Link>
-          </div>
+          </div> */}
         </nav>
 
         {/* RIGHT BUTTONS */}
-        <div className="flex items-center space-x-4">
+        <div className="flex items-center space-x-3">
+
           <Link
-            className="hidden md:flex bg-orange-500 text-white px-5 py-2 rounded-full text-sm font-medium"
+            href="https://www.linkedin.com"
+            target="_blank"
+            className="text-gray-700  transition"
+          >
+            <FaLinkedinIn size={23 } />
+          </Link>
+
+          <Link
+            href="https://www.instagram.com"
+            target="_blank"
+            className="text-gray-700  transition"
+          >
+            <FaInstagram size={23 } />
+          </Link>
+
+          <Link
+            className="lg:bg-gray-800 lg:text-white lg:px-5 font-semibold lg:rounded-full lg:py-1"
             href="/contact"
           >
-            Support Us
+            Help
           </Link>
 
           {/* MOBILE MENU BUTTON */}

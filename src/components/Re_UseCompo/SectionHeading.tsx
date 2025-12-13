@@ -12,7 +12,7 @@ export default function SectionHeading({ badgeText, titleText, paraText } : sect
   return (
     <div className="">
 
-      <div className=" flex flex-col lg:items-center items-start space-y-2 mb-4">
+      <div className=" flex flex-col lg:items-center items-start space-y-2 ">
 
         <h4 className="bg-orange-100 inline-block px-5 rounded-full text-gray-800 uppercase font-semibold py-1 text-sm ">
           {badgeText}

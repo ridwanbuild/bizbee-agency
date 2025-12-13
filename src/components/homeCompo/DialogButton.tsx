@@ -7,7 +7,7 @@ import {
   DialogHeader,
   DialogTitle,
 } from "@/components/ui/dialog";
-import Want_Request from "./Want_Requst";
+import Want_Request from "../RequstPage/Requst_Form";
 
 
 

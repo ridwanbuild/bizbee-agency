@@ -3,7 +3,7 @@ import React from 'react'
 
 export default function PricingPage() {
   return (
-    <div>
+    <div className='py-16 pt-35'>
       <Pricing></Pricing>
     </div>
   )
