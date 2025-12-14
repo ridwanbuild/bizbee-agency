@@ -108,7 +108,7 @@ export default function Navbar() {
             target="_blank"
             className="text-gray-700  transition"
           >
-            <FaLinkedinIn size={23 } />
+            <FaLinkedinIn size={25 } />
           </Link>
 
           <Link
@@ -116,11 +116,11 @@ export default function Navbar() {
             target="_blank"
             className="text-gray-700  transition"
           >
-            <FaInstagram size={23 } />
+            <FaInstagram size={25 } />
           </Link>
 
           <Link
-            className="lg:bg-gray-800 lg:text-white lg:px-5 font-semibold lg:rounded-full lg:py-1"
+            className="lg:bg-gray-800 lg:text-white  lg:px-5 font-semibold lg:rounded-full lg:py-1"
             href="/contact"
           >
             Help

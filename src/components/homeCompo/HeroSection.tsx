@@ -2,6 +2,7 @@
 
 import React from "react";
 import { FiArrowRight } from "react-icons/fi";
+import Current_Development from "../Re_UseCompo/Current_Development";
 
 
 
@@ -10,14 +11,17 @@ export default function HeroSection() {
   return (
     <div className="lg:pt-30 pt-12 bg-[url('https://raw.githubusercontent.com/prebuiltui/prebuiltui/main/assets/hero/gradientBackground.png')]  text-sm text-gray-500">
 
-      {/* HERO SECTION */}
-      <div className=" py-25 flex flex-col items-center justify-center px-4 text-center">
 
-        
+      {/* HERO SECTION */}
+      <div className=" relative h-[500px] flex flex-col items-center justify-center px-4 text-center">
+
+        <div className="absolute lg:top-0 top-15">
+          <Current_Development></Current_Development>
+        </div>
 
         {/* Title */}
-        <h1 className="lg:text-5xl lg:w-[800px] text-2xl font-bold max-w-4xl text-gray-800">
-          Solutions to Elevate <span className="text-teal-600"> Your Business </span> Growth
+        <h1 className="lg:text-5xl lg:w-[600px] text-2xl font-bold max-w-4xl text-gray-800">
+          Solutions to Elevate <span className="text-orange-600"> Your Business </span> Growth
         </h1>
 
         {/* Description */}

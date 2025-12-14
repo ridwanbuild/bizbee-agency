@@ -40,28 +40,14 @@ const Services: React.FC = () => {
       <div className="max-w-6xl mx-auto px-6">
         {/* Title */}
 
-       <div className="flex lg:items-center flex-col items-start">
-         <SectionHeading
-          badgeText="Your Vision"
-          titleText="Our Expertise"
-
-          paraText="We are a multidisciplinary agency dedicated to driving measurable
+        <div className="flex lg:items-center flex-col items-start">
+          <SectionHeading
+            badgeText="Your Vision"
+            titleText="Our Expertise"
+            paraText="We are a multidisciplinary agency dedicated to driving measurable
           results through creative excellence and strategic execution."
-          
-        ></SectionHeading>
-
-
-
-       </div>
-
-
-        
-    
-
-
-
-
-
+          ></SectionHeading>
+        </div>
 
         {/* Cards */}
         <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-4">
@@ -83,7 +69,7 @@ const Services: React.FC = () => {
                 hover:shadow-lg
                 "
               >
-                <div className="text-green-600 mb-3">
+                <div className="text-orange-600 mb-3">
                   <Icon size={28} />
                 </div>
 

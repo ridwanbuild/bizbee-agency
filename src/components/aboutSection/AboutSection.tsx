@@ -5,37 +5,37 @@ const cardData = [
     title: "Modern & Clean Design",
     desc: "We deliver visually stunning and user-focused interfaces.",
     icon: <FaPalette />,
-    gradient: "from-orange-50 to-orange-100",
+    gradient: "from-orange-50 to-orange-50",
   },
   {
     title: "Fast Communication",
     desc: "Smooth workflow, quick response, and dedicated support.",
     icon: <FaCheckCircle />,
-    gradient: "from-green-50 to-green-100",
+    gradient: "from-green-50 to-green-50",
   },
   {
     title: "On-Time Delivery",
     desc: "We respect your deadlines—always.",
     icon: <FaBullseye />,
-    gradient: "from-blue-50 to-blue-100",
+    gradient: "from-blue-50 to-blue-50",
   },
   {
     title: "High-Quality Output",
     desc: "Precision, polish, and professional-level execution.",
     icon: <FaCogs />,
-    gradient: "from-purple-50 to-purple-100",
+    gradient: "from-purple-50 to-purple-50",
   },
   {
     title: "Strategy + Creativity",
     desc: "Every project blends design thinking with business goals.",
     icon: <FaChartLine />,
-    gradient: "from-pink-50 to-pink-100",
+    gradient: "from-pink-50 to-pink-50",
   },
   {
     title: "Long-Term Partnership",
     desc: "We grow with you—not just complete a project.",
     icon: <FaLaptopCode />,
-    gradient: "from-yellow-50 to-yellow-100",
+    gradient: "from-yellow-50 to-yellow-50",
   },
 ];
 
