@@ -23,7 +23,7 @@ const Help_section = () => {
         <div className="order-2 lg:order-1  lg:text-left">
             
           <h2 className="lg:text-3xl text-2xl font-bold text-gray-900 mb-4">
-            Can't find what you're looking for?
+            Can't find what you're <br /> looking for?
           </h2>
           <p className="text-gray-600 mb-6">
             We're here to help.
