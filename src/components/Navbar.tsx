@@ -76,11 +76,12 @@ export default function Navbar() {
           </div>
 
           {/* MOBILE LINKS */}
-          {navLinks.map((item) => (
+         <div className=" flex flex-col pt-8">
+           {navLinks.map((item) => (
             <Link
               key={item.label}
               href={item.href}
-              className={`capitalize hover:text-orange-600 py-1.5 ${
+              className={`capitalize hover:text-orange-600 py-2 ${
                 pathname === item.href ? "text-orange-600 font-medium" : ""
               }`}
               onClick={() => setMobileOpen(false)}
@@ -88,6 +89,8 @@ export default function Navbar() {
               {item.label}
             </Link>
           ))}
+          
+         </div>
 
         </nav>
 
