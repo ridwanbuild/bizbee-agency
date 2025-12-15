@@ -51,8 +51,7 @@ const Footer: React.FC = () => {
           </Link>
 
           <p className="max-w-[410px] mt-6 leading-relaxed text-gray-600">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum unde
-            quaerat eveniet cumque accusamus atque amet.
+            Biz-Bee is a creative digital agency dedicated to helping businesses grow online. We deliver strategic marketing, stunning design, and measurable results.
           </p>
         </div>
 

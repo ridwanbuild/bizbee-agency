@@ -80,7 +80,7 @@ export default function Navbar() {
             <Link
               key={item.label}
               href={item.href}
-              className={`capitalize hover:text-orange-600 py-3 ${
+              className={`capitalize hover:text-orange-600 py-1.5 ${
                 pathname === item.href ? "text-orange-600 font-medium" : ""
               }`}
               onClick={() => setMobileOpen(false)}
@@ -89,15 +89,6 @@ export default function Navbar() {
             </Link>
           ))}
 
-          {/* <div className="pt-4 flex items-center justify-center">
-            <Link
-              className="border w-full border-gray-300 text-center px-5 py-2 rounded-md text-sm font-medium"
-              href="/contact"
-              onClick={() => setMobileOpen(false)}
-            >
-              Support Us
-            </Link>
-          </div> */}
         </nav>
 
         {/* RIGHT BUTTONS */}

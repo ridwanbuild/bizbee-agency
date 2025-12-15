@@ -10,45 +10,51 @@ interface StatItem {
 const stats: StatItem[] = [
   {
     value: "100K+",
-    subLabel: "DUA & RUQYAH",
+    subLabel: "total Users",
   },
   {
     value: "5K+",
-    subLabel: "QURAN MAZID ",
+    subLabel: "Campaigns",
   },
   {
     value: "500K+",
-    subLabel: "QURAN MAZID",
+    subLabel: "Engagements",
   },
   {
     value: "1M+",
-
-    subLabel: "AL HADITH",
+    subLabel: "Impressions",
   },
 ];
 
 export default function StatsSection() {
   return (
-    <section className="py-10 px-4 container m-auto ">
+    <section className="pb-10  px-4 container m-auto">
 
       <div className="flex lg:items-center flex-col items-start">
+
         <SectionHeading
           badgeText="USER STATISTICS"
-          titleText="Number of User's"
-          paraText="We are a multidisciplinary agency dedicated to driving measurable
-          results through creative excellence and strategic execution."
-        ></SectionHeading>
+          titleText="Our Impact"
+          paraText="Driving measurable growth with creativity and strategy."
+          
+        />
       </div>
 
       {/* Stats Grid */}
-      <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 max-w-lg  lg:max-w-5xl m-auto ">
+      <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 max-w-lg lg:max-w-5xl m-auto">
         {stats.map((item, index) => (
-          <div key={index} className={`lg:p-8 py-8 p-3 rounded-xl text-center shadow-md `}>
-            <h3 className="lg:text-3xl text-lg font-bold text-gray-800">{item.value}</h3>
+          <div
+            key={index}
+            className="lg:p-8 py-8 p-3 rounded-xl text-center shadow-md bg-white"
+          >
+            <h3 className="lg:text-3xl capitalize text-2xl font-bold text-orange-600">
+              {item.value}
+            </h3>
 
-            <p className="text-sm font-semibold text-gray-700">
+            <p className="text-lg capitalize font-semibold text-gray-700">
               {item.subLabel}
             </p>
+
           </div>
         ))}
       </div>
