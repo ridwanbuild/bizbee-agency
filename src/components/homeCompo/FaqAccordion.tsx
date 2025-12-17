@@ -7,7 +7,7 @@ import {
   AccordionTrigger,
   AccordionContent,
 } from "@/components/ui/accordion";
-import Image from "next/image";
+
 
 export type FaqItem = {
   id: string;
@@ -79,7 +79,7 @@ export function FaqAccordion() {
 
       <div className="grid lg:grid-cols-2 items-center gap-8 px-4 container m-auto">
         <div className="self-start lg:pt-30">
-          <Image
+          <img
             src={"/contact-image/contact-image.jpg"}
             alt="contact image"
             width={500}

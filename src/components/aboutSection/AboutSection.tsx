@@ -1,4 +1,5 @@
 import { FaPalette, FaCheckCircle, FaBullseye, FaCogs, FaChartLine, FaLaptopCode } from "react-icons/fa";
+import SectionHeading from "../Re_UseCompo/SectionHeading";
 
 const cardData = [
   {
@@ -46,14 +47,21 @@ export default function AboutSection() {
         {/* Heading */}
 
         <div className="lg:text-center mb-14">
-          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
-            About <span className="text-orange-600">Biz-Bee</span>
+          <h2 className="text-4xl md:text-5xl font-bold text-slate-800 mb-4">
+
+            About <span className="bg-gradient-to-r from-orange-500 to-blue-800 bg-clip-text text-transparent">Bizbee</span>
           </h2>
           <p className="text-gray-600 max-w-2xl mx-auto">
             We help brands grow with powerful digital experiences—combining design,
             strategy, creativity, and technology to create results that matter.
           </p>
         </div>
+
+
+          {/* <SectionHeading badgeText="About Us" titleText="bizbee industry" paraText="We help brands grow with powerful digital experiences—combining design,
+            strategy, creativity, and technology to create results that matter.">
+
+          </SectionHeading> */}
 
 
 

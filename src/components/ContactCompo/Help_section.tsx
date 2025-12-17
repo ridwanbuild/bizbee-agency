@@ -1,6 +1,6 @@
 "use client";
 
-import Image from "next/image";
+
 import Link from "next/link";
 
 const Help_section = () => {
@@ -10,7 +10,7 @@ const Help_section = () => {
 
         {/* Image FIRST on mobile */}
         <div className="flex justify-center lg:justify-end order-1 lg:order-2">
-          <Image
+          <img
             src="/contact-image/help-image.png"
             width={400}
             height={400}
