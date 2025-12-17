@@ -10,7 +10,8 @@ export default function Current_Development() {
         <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-green-300"></span>
       </span>
 
-      <span>Currently in development</span>
+      <span className="bg-gradient-to-r from-slate-700 to-rose-600 bg-clip-text text-transparent">Currently in development</span>
+
     </div>
   );
 }

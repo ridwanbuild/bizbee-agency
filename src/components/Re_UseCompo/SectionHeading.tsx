@@ -14,12 +14,12 @@ export default function SectionHeading({ badgeText, titleText, paraText } : sect
 
       <div className=" flex flex-col lg:items-center items-start space-y-2 ">
 
-        <h4 className="bg-orange-100 text-orange-600 inline-block px-5 rounded-full  uppercase font-semibold py-1 text-sm ">
+        <h4 className="bg-orange-50 text-orange-600 inline-block px-5 rounded-full  uppercase font-semibold py-1 text-sm ">
           {badgeText}
           
         </h4>
 
-        <h2 className="lg:text-3xl capitalize text-2xl bg-gradient-to-r from-slate-800 via-slate-700 to-gray-900 bg-clip-text text-transparent font-bold">
+        <h2 className="lg:text-3xl capitalize text-2xl bg-gradient-to-r from-orange-500 to-blue-800 bg-clip-text text-transparent font-bold">
           {titleText}
           
         </h2>

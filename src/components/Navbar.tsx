@@ -30,8 +30,8 @@ export default function Navbar() {
       <header className="flex items-center bg-white lg:bg-white/50 lg:backdrop-blur-md justify-between fixed lg:top-3 left-1/2 -translate-x-1/2 container px-6 py-4 shadow-md lg:rounded-full z-30">
         {/* LOGO */}
         <Link href="/">
-          <h2 className="font-bold text-2xl">
-            Biz-<span className="text-orange-600">Bee</span>
+          <h2 className="font-bold bg-gradient-to-r from-slate-700 to-red-400 bg-clip-text text-transparent text-2xl">
+            Bizbee
           </h2>
         </Link>
 
@@ -61,11 +61,11 @@ export default function Navbar() {
           `}
         >
           <div className="flex items-center border-b border-gray-200 pb-6 justify-between">
-            <Link href="/">
-              <h2 className="font-bold text-xl">
-                Biz-<span className="text-teal-600">Bee</span>
-              </h2>
-            </Link>
+              <Link href="/">
+          <h2 className="font-bold bg-gradient-to-r from-slate-700 to-red-400 bg-clip-text text-transparent text-2xl">
+            Bizbee
+          </h2>
+        </Link>
 
             <button
               className="cursor-pointer text-gray-800"
@@ -114,7 +114,7 @@ export default function Navbar() {
           </Link>
 
           <Link
-            className="lg:bg-gray-800 lg:text-white  lg:px-5 font-semibold lg:rounded-full lg:py-1"
+            className="lg:bg-slate-800 lg:text-white  lg:px-5 font-semibold lg:rounded-full lg:py-1"
             href="/contact"
           >
             Help

@@ -59,7 +59,7 @@ const Pricing: React.FC = () => {
         <div className=" ">
           <SectionHeading
             badgeText="Pricing Plans"
-            titleText="Flexible Plans for Every Business"
+            titleText="Flexible Plans "
             paraText="Whether you're just starting or scaling your brand, choose a plan that fits your goals."
           />
         </div>
@@ -97,7 +97,7 @@ const Pricing: React.FC = () => {
               className="p-8 bg-white rounded-xl shadow-sm border flex flex-col justify-between"
             >
               <div>
-                <h3 className="text-xl font-bold mb-1 text-black">
+                <h3 className="text-xl font-bold mb-1 text-orange-500">
                   {plan.name}
                 </h3>
 
@@ -129,7 +129,7 @@ const Pricing: React.FC = () => {
               </div>
 
               {/* CTA */}
-              <button className="w-full cursor-pointer py-2 px-4 bg-gray-800 text-white rounded-lg text-sm hover:bg-gray-900 transition">
+              <button className="w-full cursor-pointer py-2.5 px-4 bg-gradient-to-r from-slate-700 to-slate-500 text-white rounded-lg text-sm hover:bg-gray-900 transition">
                 Request This Plan
               </button>
             </div>

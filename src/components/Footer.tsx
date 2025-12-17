@@ -39,18 +39,18 @@ const iconMap: any = {
 
 const Footer: React.FC = () => {
   return (
-    <footer className="px-6 md:px-16 lg:px-24 xl:px-32 bg-gradient-to-b from-[#F1EAFF] to-[#FFFFFF]">
-      <div className="flex flex-col md:flex-row items-start justify-between gap-10 py-10 border-b border-gray-300/40 text-gray-600">
+    <footer className="px-6 md:px-16 lg:px-24 xl:px-32 bg-gradient-to-b from-[#040e22] to-[#120536]">
+      <div className="flex flex-col md:flex-row items-start justify-between gap-10 py-10 border-b border-gray-300/40 text-gray-300">
 
         {/* LOGO section */}
         <div>
           <Link href="/">
-            <h2 className="font-bold text-gray-800 text-3xl">
-              Biz-<span className="text-teal-600">Bee</span>
+            <h2 className="font-bold  text-3xl">
+              Biz-<span className="">Bee</span>
             </h2>
           </Link>
 
-          <p className="max-w-[410px] mt-6 leading-relaxed text-gray-600">
+          <p className="max-w-[410px] mt-6 leading-relaxed ">
             Biz-Bee is a creative digital agency dedicated to helping businesses grow online. We deliver strategic marketing, stunning design, and measurable results.
           </p>
         </div>
@@ -59,7 +59,7 @@ const Footer: React.FC = () => {
         <div className="flex flex-wrap justify-between w-full md:w-[45%] gap-5">
           {linkSections.map((section) => (
             <div key={section.title}>
-              <h3 className="font-semibold text-base text-gray-800 md:mb-5 mb-2">
+              <h3 className="font-semibold text-base  md:mb-5 mb-2">
                 {section.title}
               </h3>
 
@@ -68,7 +68,7 @@ const Footer: React.FC = () => {
                   <li key={link}>
                     <Link
                       href="#"
-                      className="flex items-center gap-2 hover:underline text-gray-600 hover:text-gray-900 transition"
+                      className="flex items-center gap-2 hover:underline transition"
                     >
                       {/* If Follow Us → show icon */}
                       {section.title === "Follow Us" && iconMap[link]}
